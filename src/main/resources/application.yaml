@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: uni-db-cassandra
+  cassandra:
+    keyspace-name: testKeySpace
+    port: 9042
+    contact-points: 127.0.0.1
+    username: admin
+    password: admin
+    local-datacenter: datacenter1
+    schema-action: CREATE_IF_NOT_EXISTS
+
+logging:
+  level:
+    com.dm4nk: DEBUG
+    org.springframework.data.cassandra: DEBUG
